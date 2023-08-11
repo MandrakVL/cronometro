@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cronometro">
+            <div class="titulo">
+                <h1>Cronômetro</h1>
+            </div>
+            <div class="tempo">
+                <span id="temp">00:00:00</span>
+                <span class="milisegundos" id="miliseg">00</span>
+            </div>
+            <div class="botoes">
+                <div class="btn-iniciar">
+                    <button id="iniciarBtn" onclick="bIniciar()">Iniciar</button>
+                </div>
+                <div class="btn-pausar">
+                    <button id="pausarBtn" onclick="bPausar()">Pausar</button>
+                </div>
+                <div class="btn-parar">
+                    <button id="pararBtn" onclick="bParar()">Parar</button>
+                </div>
+            </div>
+            <div class="msg dsp-n" id="msg">
+                <span id="msgTexto"></span>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
